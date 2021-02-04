@@ -1,20 +1,22 @@
 const { users } = require("../../models");
 
-module.exports = (req,res)=>{
+module.exports = async (req,res)=>{
     const { userEmail, passWord, userName } = req.body;
-    const result = users.findAll({
-      where: { email: userEmail },
-    });
-
-    if (result.length === 0) {
-      res.status(409).send('Already exist!');
-    } else {
-      const userCreate = users.create({
-        userEmail,
-        passWord,
-        userName,
-      });
-      res.json({data : userCreate, message:'success'});
-    }
-  
-}
+    const result = await users.findOne({
+      where: { userEmail: userEmail },
+    })
+    .then(data => {
+      if (data) {
+        res.status(409).send('Already exist!');
+      } else {
+        users.create({
+          userEmail,
+          passWord,
+          userName,
+        })
+        .then(
+          res.status(200).json({message:'success'}))
+        }
+    })
+ }
+    
