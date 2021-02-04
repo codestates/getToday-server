@@ -6,12 +6,12 @@ const {
   sendAccessToken,
 } = require('../tokenFunctions');
 
-module.exports = (req, res) => {
-  const { userId, password } = req.body;
+module.exports =  (req, res) => {
+  const { userId, passWord } = req.body;
   User.findOne({
     where: {
       userId,
-      password,
+      passWord,
     },
   })
     .then((data) => {
