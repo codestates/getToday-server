@@ -1,4 +1,4 @@
-const { User } = require('../../models');
+const { users } = require('../../models');
 const {
   generateAccessToken,
   generateRefreshToken,
@@ -7,10 +7,10 @@ const {
 } = require('../tokenFunctions');
 
 module.exports =  (req, res) => {
-  const { userId, passWord } = req.body;
-  User.findOne({
+  const { userEmail, passWord } = req.body;
+  users.findOne({
     where: {
-      userId,
+      userEmail,
       passWord,
     },
   })
