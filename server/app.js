@@ -1,0 +1,34 @@
+const fs = require("fs");
+const https = require("https");
+const cors = require("cors");
+const cookieParser = require("cookie-parser");
+const usersRouter = require('./routes/user');
+
+const express = require("express");
+const app = express();
+// const controllers = require("./controller/users");
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(
+  cors({
+    credentials: true,
+    methods: ["GET", "POST", "OPTIONS"],
+  })
+);
+app.use(cookieParser());
+// app.post("/login", controllers.login);
+// app.get("/accesstokenrequest", controllers.accessTokenRequest);
+// app.get("/refreshtokenrequest", controllers.refreshTokenRequest);
+app.use('/users', usersRouter);
+// app.post("/users/login", controllers.Login)
+// app.post("/users/logout", controllers.Logout)
+// app.post("/users/signup", controllers.Signup)
+app.get("/", (req,res) => {res.send('hello')})
+
+
+const HTTPS_PORT = 4000;
+const httpsServer = https.createServer(app);
+httpsServer.listen(HTTPS_PORT, () => console.log("server runnning", HTTPS_PORT));
+
+module.exports = httpsServer;
