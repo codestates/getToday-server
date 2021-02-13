@@ -2,8 +2,8 @@ const fs = require("fs");
 const https = require("https");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
-const privateKey = fs.readFileSync(__dirname + "/../key.pem", "utf8");
-const certificate = fs.readFileSync(__dirname + "/../cert.pem", "utf8");
+const privateKey = fs.readFileSync(__dirname + "/key.pem", "utf8");
+const certificate = fs.readFileSync(__dirname + "/cert.pem", "utf8");
 const credentials = { key: privateKey, cert: certificate };
 const usersRouter = require('./routes/user');
 
@@ -15,6 +15,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(
   cors({
+    origin: ["https://localhost:3000"],
     credentials: true,
     methods: ["GET", "POST", "OPTIONS"],
   })

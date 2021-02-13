@@ -1,5 +1,3 @@
 module.exports = (req, res) => {
-  return req.cookies("Authorization", "").json({
-    logoutSuccess : true,
-  })
+  res.status(205).send('logout success!')
 };

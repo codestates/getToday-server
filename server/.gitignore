@@ -4,4 +4,4 @@ localhost*
 cert.pem
 key.pem
 README.md
-./config
+/config
