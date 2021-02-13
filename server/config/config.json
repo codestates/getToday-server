@@ -2,7 +2,7 @@
   "development": {
     "username": "admin",
     "password": "12341234",
-    "database": "justTest",
+    "database": "getToday_project",
     "host": "database-1.ciqqhmvwbizm.ap-northeast-2.rds.amazonaws.com",
     "dialect": "mysql"
   },
