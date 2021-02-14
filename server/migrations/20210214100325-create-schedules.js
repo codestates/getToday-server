@@ -12,16 +12,16 @@ module.exports = {
         type: Sequelize.STRING
       },
       startTime: {
-        type: Sequelize.INTEGER
+        type: Sequelize.STRING
       },
       endTime: {
-        type: Sequelize.INTEGER
+        type: Sequelize.STRING
       },
       userEmail: {
         type: Sequelize.STRING
       },
-      data: {
-        type: Sequelize.INTEGER
+      date: {
+        type: Sequelize.STRING
       },
       userId: {
         type: Sequelize.INTEGER

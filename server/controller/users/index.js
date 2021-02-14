@@ -3,5 +3,6 @@ module.exports = {
   Logout : require("./Logout"),
   Signup : require("./Signup"),
   RemoveSchedule : require("./removeScheule"),
-  AddSchedule : require("./addSchedule")
+  AddSchedule : require("./addSchedule"),
+  GetSchedule : require("./getSchedules")
 }
