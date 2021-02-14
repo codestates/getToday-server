@@ -15,8 +15,10 @@ module.exports = (sequelize, DataTypes) => {
   };
   schedules.init({
     title: DataTypes.STRING,
-    spendTime: DataTypes.INTEGER,
-    option: DataTypes.STRING,
+    startTime: DataTypes.INTEGER,
+    endTime: DataTypes.INTEGER,
+    userEmail: DataTypes.STRING,
+    data: DataTypes.INTEGER,
     userId: DataTypes.INTEGER
   }, {
     sequelize,
