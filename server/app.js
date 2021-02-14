@@ -37,4 +37,3 @@ const HTTPS_PORT = 4000;
 const httpsServer = https.createServer(credentials, app);
 httpsServer.listen(HTTPS_PORT, () => console.log("server runnning", HTTPS_PORT));
 
-module.exports = httpsServer;
