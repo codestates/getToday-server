@@ -27,7 +27,7 @@ module.exports = async (req, res) => {
   //   }
   // })
 
-  await schedules.create({
+  schedules.create({
     title : title,
     startTime: startTime,
     endTime: endTime,
