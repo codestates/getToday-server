@@ -1,30 +1,17 @@
-# im25project11-server
-
-![](https://img.shields.io/badge/project-Memory.log-blue?style=for-the-badge)
-![](https://img.shields.io/badge/Memory.log-Mobile-black?style=for-the-badge)
-<a href="https://gitmoji.carloscuesta.me">
-  <img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=for-the-badge" alt="Gitmoji">
-</a> 
+# getToday
+![](https://img.shields.io/badge/Project-getToday-blue?style=for-the-badge)
 
 
-✅ [위의 뱃지를 활용하여 여러분의 저장소에 활용 해보세요](https://github.com/badges/shields)
+# 📸 getToday
 
-# 📸 Memory_log
-<img src=https://user-images.githubusercontent.com/48914716/89749904-b0283a80-db04-11ea-9a9f-827a9cecea8c.png width=300 height=300 />
 
 ✅ [이미지를 통해 여러분의 서비스를 소개해주세요](https://worthpreading.tistory.com/83)
 
-여행 도중 찍었던 사진을 나중에 다시 보면서,
+오늘도 성공적인 하루를 위한 일정 관리 파트너!
 
-'이때는 어떤 생각을 하며 이 사진을 찍었을까?’ 라는 생각이 들었던 적이 있나요?
+**"오늘을 잡아라! getToday!"**
 
-당신의 추억이 날라가버리지 않을 수 있는 곳, ***Memory.log*** 를 찾아주세요~
-
-여행 중 사진을 찍고 그와 동시에 당시에 느꼈던 감정을 짤막하게 기록하면, 그것이 ‘추억저장소’에 담겨 시간이 지나도 그때의 감정을 생생하게 기억할 수 있습니다!
-
-**"여행을 하며 순간의 추억을 기록하는 당신의 여행 파트너”** 
-
-***Memory.log*** 입니다 :)
+***getToday*** 입니다 :)
 
 # 🕵🏼 어떤 기술이 사용되었나요?
 
