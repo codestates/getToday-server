@@ -11,11 +11,17 @@ module.exports = {
       title: {
         type: Sequelize.STRING
       },
-      spendTime: {
+      startTime: {
         type: Sequelize.INTEGER
       },
-      option: {
+      endTime: {
+        type: Sequelize.INTEGER
+      },
+      userEmail: {
         type: Sequelize.STRING
+      },
+      data: {
+        type: Sequelize.INTEGER
       },
       userId: {
         type: Sequelize.INTEGER

@@ -6,6 +6,7 @@ const privateKey = fs.readFileSync(__dirname + "/key.pem", "utf8");
 const certificate = fs.readFileSync(__dirname + "/cert.pem", "utf8");
 const credentials = { key: privateKey, cert: certificate };
 const usersRouter = require('./routes/user');
+const schedulesRouter = require('./routes/schedules')
 
 const express = require("express");
 const app = express();
@@ -25,6 +26,7 @@ app.use(cookieParser());
 // app.get("/accesstokenrequest", controllers.accessTokenRequest);
 // app.get("/refreshtokenrequest", controllers.refreshTokenRequest);
 app.use('/users', usersRouter);
+app.use('/schedules', schedulesRouter);
 // app.post("/users/login", controllers.Login)
 // app.post("/users/logout", controllers.Logout)
 // app.post("/users/signup", controllers.Signup)
